@@ -9,13 +9,13 @@ export class AppComponent {
   title = 'ProvaEsercizio';
   tot : number = 0;
 
-  OnSum(numero: HTMLInputElement):boolean{
-    this.tot = Number(numero.value) + this.tot;
+  OnSum(n: HTMLInputElement):Boolean{
+    this.tot = Number(n.value) + this.tot;
     return false;
   }
 
-  OnSuB(numero: HTMLInputElement):boolean{
-    this.tot = Number(numero.value) + this.tot;
+  OnSuB(n: HTMLInputElement):Boolean{
+    this.tot = this.tot - Number(n.value);
     return false;
   }
 

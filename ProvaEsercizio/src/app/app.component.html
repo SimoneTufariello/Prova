@@ -1,7 +1,9 @@
 <form>
-  <input #nummero placeholder = "Inserisci un numero">
+  <input #n placeholder = "Inserisci un numero">
   <br><br>
-  <button (click)= "OnSum(numero)">+</button>
-  <button (click)= "OnSub(numero)">-</button>
+  <button (click)= "OnSum(n)">+</button>
+  <button (click)= "OnSub(n)">-</button>
 </form>
+<br>
+<app-cont [ris] = "tot"></app-cont>
 
