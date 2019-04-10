@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProvaEsercizio';
+  tot : number = 0;
+
+  OnSum(numero: HTMLInputElement):boolean{
+    this.tot = Number(numero.value) + this.tot;
+    return false;
+  }
+
+  OnSuB(numero: HTMLInputElement):boolean{
+    this.tot = Number(numero.value) + this.tot;
+    return false;
+  }
+
 }
